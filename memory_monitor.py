@@ -2,7 +2,7 @@
 # email: xinshuo.weng@gmail.com
 import numpy as np
 
-
+import __init__
 from layer import Convolution, Pooling, Input
 from net import SequentialNet
 
