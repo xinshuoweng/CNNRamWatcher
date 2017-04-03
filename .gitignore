@@ -87,3 +87,10 @@ ENV/
 
 # Rope project settings
 .ropeproject
+
+# output file
+*.txt
+*.png
+*.pdf
+*.jpg
+*.jpeg
