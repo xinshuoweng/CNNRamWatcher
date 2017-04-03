@@ -23,15 +23,15 @@ python example.py
 
 *Network Info Table:*
 <p align="center">
-![Network Info Table](network_info.png)
+<img alt="Network Info Table", src="network_info.png")
 </p>
 
 *Memory Usage Pie Chart:*
 <p align="center">
-![Memory Usage Pie Chart](memory_chart.png)
+<img alt="Memory Usage Pie Chart", src="memory_chart.png")
 </p>
 
 *Model Graph:*
 <p align="center">
-![Model Graph](model_graph.png)
+<img alt="Model Graph", src="model_graph.png")
 </p>
