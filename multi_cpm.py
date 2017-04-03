@@ -14,6 +14,7 @@ def main():
 	# create network
 	inputlayer = Input(name='input', inputshape=(368, 368, 3), datatype='uint')
 
+
 	network = gModule({})
 	head.add(Convolution(name='conv1_1', nOutputPlane=64, kernal_size=3, padding=1, datatype='single'))
 	head.add(Activation(name='relu1_1', function='relu', datatype='single'))
