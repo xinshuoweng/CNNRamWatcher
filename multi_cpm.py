@@ -14,7 +14,7 @@ def main():
 	# create network
 	inputlayer = Input(name='input', inputshape=(368, 368, 3), datatype='uint')
 
-	head = Sequential(inputlayer)
+	network = gModule({})
 	head.add(Convolution(name='conv1_1', nOutputPlane=64, kernal_size=3, padding=1, datatype='single'))
 	head.add(Activation(name='relu1_1', function='relu', datatype='single'))
 	head.add(Convolution(name='conv1_2', nOutputPlane=64, kernal_size=3, padding=1, datatype='single'))
@@ -84,7 +84,7 @@ def main():
 	# network.add(Dense(name='fc2', nOutputPlane=6, datatype='single'))
 	# network.add(Activation(name='linear1', function='linear', datatype='single'))
 	input_data = np.ndarray((1, 368, 368, 3))
-	network = gModule({})
+
 	network.compile(input_data)
 
 	# save network info to a table and also the memory usage chart and model graph to image
