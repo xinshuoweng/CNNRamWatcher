@@ -35,3 +35,9 @@ python example.py
 <p align="center">
 <img alt="Model Graph", src="model_graph.png")
 </p>
+
+
+#### Limitation:
+
+*1. Only sequential model is supported right now. More operation for constructing the graph will be added depended on demand*
+*2. Only basic layers (Convolution, Pooling, Activation, Dense) are supported right now. More layers will be added in the future.*
