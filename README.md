@@ -10,7 +10,7 @@ git clone --recursive https://github.com/xinshuoweng/cnn_monitor
 
 *2. install dependency for the toolbox.*
 ~~~shell
-cd cnn_monitor
+cd cnn_monitor/xinshuo_toolbox
 pip install requirements.txt
 ~~~
 
