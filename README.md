@@ -1,5 +1,5 @@
 # CNN Memory Usage Monitor
-A very lightweight deep learning tool for monitoring data and parameter usage throughout CNN. This tool doesn't need any powerful computational resource (eg. GPU).
+A very lightweight deep learning tool for monitoring data flow and parameter usage throughout CNN. This tool doesn't need any powerful computational resource (eg. GPU). And it's very easy to use since it follows many similar rules in popular deep learning framework (Caffe, Tensorflow, Torch)
 
 #### Usage:
 
