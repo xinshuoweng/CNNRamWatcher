@@ -21,5 +21,5 @@ python example.py
 
 **Example**:
 
-![alt tag](network_info.png)
-![alt tag](chart.png)
+![Network Info Table](network_info.png)
+![Memory Usage Pie Chart](chart.png)
