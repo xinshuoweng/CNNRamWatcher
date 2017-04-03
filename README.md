@@ -5,12 +5,12 @@ A very lightweight deep learning tool for monitoring data flow, parameter size a
 
 *1. clone the github repository recursively including xinshuo_toolbox.*
 ~~~shell
-git clone --recursive https://github.com/xinshuoweng/cnn_memory_usage_monitor
+git clone --recursive https://github.com/xinshuoweng/cnn_monitor
 ~~~
 
 *2. install dependency for the toolbox.*
 ~~~shell
-cd cnn_memory_usage_monitor
+cd cnn_monitor
 pip install requirements.txt
 ~~~
 
