@@ -16,6 +16,7 @@ pip install -r requirements.txt
 
 *3. define the network and print the memory info (one might want to look at example.py first for a quick and simple instruction).*
 ~~~shell
+cd ..
 python example.py
 ~~~
 
