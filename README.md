@@ -1,7 +1,7 @@
 # CNN Memory Usage Monitor
 A simple deep learning tool for monitoring data and parameter usage throughout CNN.
 
-**Usage**:
+#### Usage:
 
 *1. clone the github repository recursively including xinshuo_toolbox.*
 ~~~shell
@@ -19,7 +19,7 @@ pip install requirements.txt
 python example.py
 ~~~
 
-**Example Result**:
+#### Example Result:
 
 *Network Info Table:*
 <p align="center">
