@@ -1,5 +1,5 @@
 # CNN Monitor
-A very lightweight deep learning tool for monitoring data flow, parameter size and their corresponding memory usage throughout CNN. This tool doesn't need any powerful computational resource (eg. GPU). And it's very easy to use since it follows many similar rules in popular deep learning framework (Caffe, Tensorflow, Torch)
+A very lightweight deep learning tool for monitoring **data flow**, **parameter size** and their corresponding **memory usage** throughout CNN. This tool **doesn't** need any powerful computational resource (eg. GPU). And it's very easy to use since it follows many similar rules in popular deep learning frameworks (**Caffe**, **Tensorflow**, **Torch**)
 
 #### Usage:
 
@@ -10,12 +10,13 @@ git clone --recursive https://github.com/xinshuoweng/cnn_monitor
 
 *2. install dependency for the toolbox.*
 ~~~shell
-cd cnn_monitor
-pip install requirements.txt
+cd cnn_monitor/xinshuo_toolbox
+pip install -r requirements.txt
 ~~~
 
 *3. define the network and print the memory info (one might want to look at example.py first for a quick and simple instruction).*
 ~~~shell
+cd ..
 python example.py
 ~~~
 
