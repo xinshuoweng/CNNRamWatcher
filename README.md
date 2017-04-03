@@ -19,7 +19,19 @@ pip install requirements.txt
 python example.py
 ~~~
 
-**Example**:
+**Example Result**:
 
+*Network Info Table:*
+<p align="center">
 ![Network Info Table](network_info.png)
-![Memory Usage Pie Chart](chart.png)
+</p>
+
+*Memory Usage Pie Chart:*
+<p align="center">
+![Memory Usage Pie Chart](memory_chart.png)
+</p>
+
+*Model Graph:*
+<p align="center">
+![Model Graph](model_graph.png)
+</p>
