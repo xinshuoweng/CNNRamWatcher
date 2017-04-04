@@ -10,8 +10,7 @@ from net import Sequential
 
 def main():
 	# create network
-	network = Sequential()
-	network.add(Input(name='input', inputshape=(84, 84, 4)))
+	network = Sequential(Input(name='input', inputshape=(84, 84, 4)))
 	network.add(Convolution(name='conv1', nOutputPlane=32, kernal_size=8, stride=4))
 	network.add(Activation(name='relu1', function='relu'))
 	# network.append(Pooling(name='pool1', kernal_size=2, stride=2))
