@@ -1,16 +1,16 @@
-# Deep Neural Network Monitor
+# Ramwatcher
 A very lightweight deep learning tool for monitoring **data flow**, **parameter size** and their corresponding **memory usage** throughout deep neural network. This tool **doesn't** need any powerful computational resource (eg. GPU). And it's very easy to use since it follows many similar rules in popular deep learning frameworks (**Caffe**, **Tensorflow**, **Torch**)
 
 #### Usage:
 
 *1. clone the github repository recursively including xinshuo_toolbox.*
 ~~~shell
-git clone --recursive https://github.com/xinshuoweng/network_monitor
+git clone --recursive https://github.com/xinshuoweng/ramwatcher
 ~~~
 
 *2. install dependency for the toolbox.*
 ~~~shell
-cd network_monitor/xinshuo_toolbox
+cd ramwatcher/xinshuo_toolbox
 pip install -r requirements.txt
 ~~~
 
