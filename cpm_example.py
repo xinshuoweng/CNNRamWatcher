@@ -3,7 +3,7 @@
 import numpy as np
 
 import __init__paths__
-from layer import Convolution, Pooling, Input, Dense, Activation
+from layer import *
 from net import gModule
 
 
@@ -25,7 +25,7 @@ def stage_network(model, conv4_4, concat_stage, stage_number):
 	conv6_stage_r = model.add(Convolution(name='conv6_stage%d_r' % stage_number, bottom=conv5_stage_r, nOutputPlane=128, kernal_size=1, padding=0, datatype='single'))
 	conv7_stage_r = model.add(Convolution(name='conv7_stage%d_r' % stage_number, bottom=conv6_stage_r, nOutputPlane=19, kernal_size=1, padding=0, datatype='single'))
 
-	concat_stage_new = model.add(Concat(name='concat_stage%d' % stage_number, bottom=[conv4_4, conv7_stage_l, conv7_stage_r], axis=1))
+	concat_stage_new = model.add(Concat(name='concat_stage%d' % (stage_number + 1), bottom=[conv4_4, conv7_stage_l, conv7_stage_r], axis=2))
 	return concat_stage_new
 
 def main():
@@ -66,7 +66,7 @@ def main():
 	conv5_4_r = model.add(Convolution(name='conv5_4_r', bottom=conv5_3_r, nOutputPlane=512, kernal_size=1, padding=0, datatype='single'))
 	conv5_5_r = model.add(Convolution(name='conv5_5_r', bottom=conv5_4_r, nOutputPlane=19, kernal_size=1, padding=0, datatype='single'))
 
-	concat_stage2 = model.add(Concat(name='concat_stage2', bottom=[conv4_4, conv5_5_l, conv5_5_r], axis=1))
+	concat_stage2 = model.add(Concat(name='concat_stage2', bottom=[conv4_4, conv5_5_l, conv5_5_r], axis=2))
 
 	concat_stage3 = stage_network(model, conv4_4, concat_stage2, 2)
 	concat_stage4 = stage_network(model, conv4_4, concat_stage3, 3)
@@ -92,8 +92,8 @@ def main():
 	conv7_stage6_r = model.add(Convolution(name='conv7_stage%d_r' % stage_number, bottom=conv6_stage6_r, nOutputPlane=19, kernal_size=1, padding=0, datatype='single'))
 
 	input_data = np.ndarray((1, 368, 368, 3))
-	network.compile(input_data)
-	network.summary()
+	model.compile(input_data)
+	model.summary()
 
 if __name__ == '__main__':
 	main()
