@@ -94,3 +94,4 @@ ENV/
 *.pdf
 *.jpg
 *.jpeg
+test/*
