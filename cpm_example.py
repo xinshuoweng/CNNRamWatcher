@@ -30,7 +30,8 @@ def stage_network(model, conv4_4, concat_stage, stage_number):
 
 def main():
 	# create network
-	inputlayer = Input(name='input', inputshape=(368, 368, 3), datatype='uint')
+	input_data = np.ndarray((1, 5000, 3000, 3))
+	inputlayer = Input(name='input', inputshape=input_data.shape[1:], datatype='uint')
 	model = gModule(inputlayer)
 
 	# define the head
@@ -91,7 +92,6 @@ def main():
 	conv6_stage6_r = model.add(Convolution(name='conv6_stage%d_r' % stage_number, bottom=conv5_stage6_r, nOutputPlane=128, kernal_size=1, padding=0, datatype='single'))
 	conv7_stage6_r = model.add(Convolution(name='conv7_stage%d_r' % stage_number, bottom=conv6_stage6_r, nOutputPlane=19, kernal_size=1, padding=0, datatype='single'))
 
-	input_data = np.ndarray((1, 368, 368, 3))
 	model.compile(input_data)
 	model.summary()
 
